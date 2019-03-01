@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>湯城_客服留言_B0221149</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body class="flower" background="BG1.jpg">
+		<table border="0">
+			<td><img src="logo.png"></td>
+			<td width="500" align="right"><nav class="box">Menu
+					<ul>
+						<a href="springtown.html"><li>首頁</li></a>
+						<a href="room.html"><li>線上訂房</li></a>
+						<a href="message.html"><li>客服留言</li></a>
+					</ul>
+				</nav>
+			</td>
+		</table>
+	
+		<table boder="0">
+			<tr>
+				<td width="400" align="center" rowspan="2"></td>
+				<th style="background-color: rgba(200,30,20,0.7); padding-left:20px; padding-right:20px;" height="60">客服留言</th>
+			</tr>
+			<tr>
+				<td style="background-color: rgba(200,30,20,0.7); padding-left:20px; padding-right:20px;">
+					<form method="get" action="message.php" autocomplete="on">
+						<p><label>姓名:<input type="text" name="name" size="8" maxlength="10"></label></p>
+						<p><label>連絡電話:<input type="tel" pattern="\d{10}" placeholder="##########(手機)"></label></p>
+						<p><label>E-MAIL:<input type="email" placeholder="example@gmail.com" size="48"></label></p>
+						<p><label>評分:0<input type="range" min="0" max="100" value="90">100</label></p>
+						<p><label>留言:<br>
+							<textarea name="p.s." type="text" rows="10" cols="60" required></textarea></label></p>
+						<p><input type="submit" value="送出">
+						   <input type="reset" value="重填"></p>
+					</form>
+				</td>
+			</tr>
+		</table>	
+	</body>
+</html>

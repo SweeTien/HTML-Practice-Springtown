@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>湯城_訂房系統_B0221149</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">	
+		<script>
+         var r, p, result;
+         var pVal, yVal;
+
+         rVal = window.prompt( "請輸入您要訂的房號:" );
+         pVal = window.prompt( "請輸入您要入住的人數:" );
+
+         r = parseInt( rVal );
+         p = parseInt( pVal );
+
+		 if(r==101||r==102||r==103||r==201)
+		 {
+		  if(p<2)
+			result=2080;
+		  else
+			result=2080+(p-2)*600;
+			document.write( "<h2>總金額為" + result + "，請確認價格再下訂單<h2>" );
+		}else if(r==202)
+				{
+				 if(p<4)
+					result=4180;
+				 else
+					result=4180+(p-4)*600;
+					document.write( "<h2>總金額為" + result + "，請確認價格再下訂單<h2>" );
+				}else
+					document.write( "<h2>輸入房號錯誤<h2>" );
+		</script>
+      
+	</head>
+	<body background="background02.jpg">
+		<h3><table border="0">
+			<td><img src="logo.png"></td>
+			<td width="500" align="right"><nav class="box">Menu
+					<ul>
+						<a href="springtown.html"><li>首頁</li></a>
+						<a href="room.html"><li>線上訂房</li></a>
+						<a href="message.html"><li>客服留言</li></a>
+					</ul>
+				</nav>
+			</td>
+		</table></h3>
+		 
+		<table boder="0">
+			<tr>
+				<td width="400" align="center" rowspan="2">				
+					<ol>Room
+						<a href="101.html"><li>禪風月桂雙人房 101</li></a>
+						<a href="102.html"><li>雅緻玉茗雙人房 102</li></a>
+						<a href="103.html"><li>時尚和風雙人房 103</li></a>
+						<a href="201.html"><li>怡然香郁雙人房 201</li></a>
+						<a href="202.html"><li>悠然山嵐四人房 202</li></a>
+					</ol>				
+				</td>
+				<th style="background-color: rgba(200,30,20,0.7); padding-left:20px; padding-right:20px;" height="60">線上訂房</th>
+			</tr>
+			<tr>
+				<td style="background-color: rgba(200,30,20,0.7); padding-left:20px; padding-right:20px;">
+					<form method="get" action="checkroom.php" autocomplete="on">
+						<p><label>姓名:<input type="text" name="name" size="8" maxlength="10" required></label></p>
+						<p><label>連絡電話:<input type="tel" pattern="\d{10}" placeholder="##########(手機)" name="phonenum" required></label></p>
+						<p>房號:
+							<label><input type="radio" name="roomnum"value="101" checked>101</label>
+							<label><input type="radio" name="roomnum"value="102" >102</label>
+							<label><input type="radio" name="roomnum"value="103" >103</label>
+							<label><input type="radio" name="roomnum"value="201" >201</label>
+							<label><input type="radio" name="roomnum"value="202" >202</label></p>
+						<p><label>入住人數:<input type="number" min="1" max="6" step="1" value="1" name="peonum"></label></p>
+						<p><label>日期:<input type="date" name="date" required></label></p>
+						<p><label>備註:<br>
+							<textarea name="p.s." type="text" rows="7" cols="60"></textarea></label></p>
+						<p><input type="submit" value="送出">
+						   <input type="reset" value="重填"></p>
+					</form>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

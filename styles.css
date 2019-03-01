@@ -1,0 +1,64 @@
+body 			{ font-family: DFKai-sb;}
+body.flower {background-size: cover;}
+.box 			{ padding-left: 20px; 
+					padding-right: 20px; 
+					padding-bottom: 10px; 
+					background-color: rgba(44,44,44,0.7);}
+nav             { font-weight: bold;
+					color: white;
+					text-align: center;
+					width: 10em; }
+nav ul          { display: none;
+					list-style: none;
+					margin: 0;
+					padding: 0; }
+ol				{ font-weight:bold;
+					width: 10em;
+					color: white;
+					font-size:16pt;
+					font-family: cursive; }	
+ol li      	    { border-top: 2px solid maroon;
+					background-color: sienna;
+					width: 10em;
+					color: white;
+					font-size:16pt;
+					font-family: DFKai-sb;}
+ol li:hover		{ background-color:gold; 
+					color:black; }			
+nav:hover ul    { display: block; }
+nav ul a li     { border-top: 2px solid maroon;
+					background-color: white;
+					width: 10em;
+					color: block; }
+nav ul li:hover { background-color: navajowhite; }
+a               { text-decoration: none; }
+th				{ color:white;
+					font-size:20pt}
+tr				{ color:white;
+					font-size:14pt}
+td a h1:hover	{ color:rgb(240,0,0);
+					font-size:35pt;}
+					/**/
+h2  			{ color:white;
+					padding-left:17em;
+					background-color:rgba(200,30,20,0.8); }
+p				{ color:white;
+					font-size:16pt}		
+			
+a img			{ width:5cm;
+					height:10cm; }
+a img:hover		{ width:4.73cm;
+					height:10.9cm;
+					border-style:double;
+					border-color:aqua; 
+					border-width:5px; }
+td a h1:hover	{ color:rgb(240,0,0);
+					font-size:35pt;}
+
+details 		{color:white;
+					width: 50em;		
+					margin-left: 180px;
+					font-size: 0.5cm; }
+details summary {font-weight: bold; 
+					text-align: center;
+						font-size: 0.8cm;}
